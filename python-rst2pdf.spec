@@ -15,7 +15,7 @@ BuildRequires:	pkgconfig(python)
 Requires:  pythonegg(docutils) 
 Requires:  pythonegg(pdfrw) 
 Requires:  pythonegg(pygments) 
-Requires:  pythonegg(reportlab) >= 2.4 
+Requires:  pythonegg(reportlab) >= 2.1 
 Requires:  pythonegg(setuptools)
 
 %description
@@ -25,6 +25,7 @@ library.
 
 %prep
 %setup -q -n %{oname}-%{version}
+perl -pi -e "s|reportlab>=2.4|reportlab>=2.1|" setup.py
 
 %build
 python setup.py build
