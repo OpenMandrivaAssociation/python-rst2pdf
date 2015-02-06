@@ -2,7 +2,7 @@
 
 Name:		python-%{oname}
 Version:	0.93
-Release:	1
+Release:	2
 Summary:	Convert restructured text to PDF via reportlab
 Source0:	https://rst2pdf.googlecode.com/files/%{oname}-%{version}.tar.gz
 License:	MIT
