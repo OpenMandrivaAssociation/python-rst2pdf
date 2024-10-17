@@ -7,7 +7,7 @@ Summary:	Convert restructured text to PDF via reportlab
 Source0:	https://rst2pdf.googlecode.com/files/%{oname}-%{version}.tar.gz
 License:	MIT
 Group:		Development/Python
-Url:		http://rst2pdf.googlecode.com
+Url:		https://rst2pdf.googlecode.com
 BuildArch:	noarch
 BuildRequires:	pythonegg(setuptools)
 BuildRequires:	pkgconfig(python)
