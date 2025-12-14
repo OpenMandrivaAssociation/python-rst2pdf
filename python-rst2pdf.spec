@@ -2,7 +2,7 @@
 
 Name:		python-%{oname}
 Version:	0.103.1
-Release:	1
+Release:	2
 Summary:	Convert restructured text to PDF via reportlab
 Source0:	https://files.pythonhosted.org/packages/source/r/rst2pdf/rst2pdf-%{version}.tar.gz
 License:	MIT
@@ -14,6 +14,10 @@ BuildSystem:	python
 BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	python%{pyver}dist(setuptools-scm)
 BuildRequires:	git-core
+# Not detected by the dependency generator because upstream code
+# falls back to docutils.utils.roman -- but we can't do that because
+# docutils.utils.roman has been removed in docutils 0.22
+Requires:	python%{pyver}dist(roman)
 
 %patchlist
 rst2pdf-allow-newer-docutils.patch
