@@ -12,11 +12,22 @@ BuildArch:	noarch
 
 BuildSystem:	python
 BuildRequires:	python%{pyver}dist(setuptools)
+BuildRequires:	python%{pyver}dist(setuptools-scm)
+BuildRequires:	git-core
 
 %description
 The usual way of creating PDF from reStructuredText is by going through LaTeX. 
 This tool provides an alternative by producing PDF directly using the ReportLab
 library.
+
+%prep -a
+# Make setuptools-scm happy
+git init
+git add .
+git config user.name "OpenMandriva Builder"
+git config user.email info@openmandriva.org
+git commit -am "Import %{version}"
+git tag -a %{version} -m %{version}
 
 %install -a
 chmod +x %{buildroot}%{py_puresitedir}/rst2pdf/{findfonts,dumpstyle}.py
