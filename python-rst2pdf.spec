@@ -15,6 +15,9 @@ BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	python%{pyver}dist(setuptools-scm)
 BuildRequires:	git-core
 
+%patchlist
+rst2pdf-allow-newer-docutils.patch
+
 %description
 The usual way of creating PDF from reStructuredText is by going through LaTeX. 
 This tool provides an alternative by producing PDF directly using the ReportLab

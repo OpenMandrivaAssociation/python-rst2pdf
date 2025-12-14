@@ -1,0 +1,25 @@
+diff -up python-rst2pdf-0.103.1/PKG-INFO.omv~ python-rst2pdf-0.103.1/PKG-INFO
+--- python-rst2pdf-0.103.1/PKG-INFO.omv~	2025-12-14 20:28:20.137401179 +0100
++++ python-rst2pdf-0.103.1/PKG-INFO	2025-12-14 20:28:25.896225186 +0100
+@@ -45,7 +45,7 @@ Classifier: Topic :: Text Processing
+ Classifier: Topic :: Utilities
+ Requires-Python: >=3.9
+ Description-Content-Type: text/x-rst
+-Requires-Dist: docutils~=0.21.2
++Requires-Dist: docutils>=0.21.2
+ Requires-Dist: importlib-metadata~=8.0
+ Requires-Dist: jinja2~=3.0
+ Requires-Dist: packaging~=24.0
+diff -up python-rst2pdf-0.103.1/pyproject.toml.omv~ python-rst2pdf-0.103.1/pyproject.toml
+--- python-rst2pdf-0.103.1/pyproject.toml.omv~	2025-12-14 20:26:36.291817002 +0100
++++ python-rst2pdf-0.103.1/pyproject.toml	2025-12-14 20:28:11.262149002 +0100
+@@ -24,7 +24,7 @@ classifiers = [
+     "Topic :: Utilities",
+ ]
+ dependencies = [
+-    "docutils~=0.21.2",
++    "docutils>=0.21.2",
+     "importlib-metadata~=8.0",
+     "jinja2~=3.0",
+     "packaging~=24.0",
+diff -up python-rst2pdf-0.103.1/uv.lock.omv~ python-rst2pdf-0.103.1/uv.lock
