@@ -21,6 +21,7 @@ Requires:	python%{pyver}dist(roman)
 
 %patchlist
 rst2pdf-allow-newer-docutils.patch
+rst2pdf-allow-newer-packaging.patch
 
 %description
 The usual way of creating PDF from reStructuredText is by going through LaTeX. 

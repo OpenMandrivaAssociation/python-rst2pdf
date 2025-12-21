@@ -1,0 +1,25 @@
+diff -up python-rst2pdf-0.103.1/PKG-INFO.omv~ python-rst2pdf-0.103.1/PKG-INFO
+--- python-rst2pdf-0.103.1/PKG-INFO.omv~	2025-12-21 17:50:12.038179291 +0100
++++ python-rst2pdf-0.103.1/PKG-INFO	2025-12-21 17:50:15.815250416 +0100
+@@ -48,7 +48,7 @@ Description-Content-Type: text/x-rst
+ Requires-Dist: docutils>=0.21.2
+ Requires-Dist: importlib-metadata~=8.0
+ Requires-Dist: jinja2~=3.0
+-Requires-Dist: packaging~=24.0
++Requires-Dist: packaging~=25.0
+ Requires-Dist: pygments~=2.0
+ Requires-Dist: pyyaml~=6.0
+ Requires-Dist: reportlab~=4.0
+diff -up python-rst2pdf-0.103.1/pyproject.toml.omv~ python-rst2pdf-0.103.1/pyproject.toml
+--- python-rst2pdf-0.103.1/pyproject.toml.omv~	2025-12-21 17:49:41.062809226 +0100
++++ python-rst2pdf-0.103.1/pyproject.toml	2025-12-21 17:49:52.536994515 +0100
+@@ -27,7 +27,7 @@ dependencies = [
+     "docutils>=0.21.2",
+     "importlib-metadata~=8.0",
+     "jinja2~=3.0",
+-    "packaging~=24.0",
++    "packaging~=25.0",
+     "pygments~=2.0",
+     "pyyaml~=6.0",
+     "reportlab~=4.0",
+diff -up python-rst2pdf-0.103.1/uv.lock.omv~ python-rst2pdf-0.103.1/uv.lock
