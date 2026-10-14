@@ -2,7 +2,7 @@
 
 Name:		python-%{oname}
 Version:	0.105
-Release:	1
+Release:	2
 Summary:	Convert restructured text to PDF via reportlab
 Source0:	https://files.pythonhosted.org/packages/source/r/rst2pdf/rst2pdf-%{version}.tar.gz
 License:	MIT
@@ -29,6 +29,8 @@ This tool provides an alternative by producing PDF directly using the ReportLab
 library.
 
 %prep -a
+# ReportLab 5 is what cooker ships. Upstream still declares reportlab~=4.0.
+sed -i 's/reportlab~=4\.0/reportlab>=4/' pyproject.toml
 # Make setuptools-scm happy
 git init
 git add .
